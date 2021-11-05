@@ -149,15 +149,15 @@ img{
 
 .social-links a{
 
-    --border-radius: 5px;
+    --brdr-radius: 5px;
     margin: 0 0.5em;
-    
+    border-radius: 0;
     flex-wrap: wrap;
     /* outline: 1px solid white; */
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+    border-top-left-radius: var(--brdr-radius);
+    border-top-right-radius: var(--brdr-radius);
+    border-bottom-left-radius: var(--brdr-radius);
+    border-bottom-right-radius: var(--brdr-radius);
     }
 
 .social-links .fa {
@@ -173,10 +173,11 @@ img{
 }
 
 .social-links .fa-linkedin{
+    border-radius: 0;
     color: white;
     background-color: rgb(10, 102, 194);
     outline: 1px solid white;
-    border-radius: var(--border-radius);
+    border-radius: var(--brdr-radius);
 }
 
 .social-links .fa-envelope{
