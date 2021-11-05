@@ -4,10 +4,10 @@
 :root {
 
     /* colors */
-    --clr-dark: #333;
+    --clr-dark: #222;
     --clr-white: #FFF;
-    --clr-accent: 0 96 160;
-    --clr-light: 214, 214, 151;
+    --clr-accent: #07366b;
+    --clr-light: #dbcea1;
     /* font-sizes */
     --fs-900: 4.5em;
     --fs-800: 4em;
@@ -98,9 +98,9 @@ img{
     width: 80%;
     margin: 1em auto;
     width: 80%; 
-    outline: 2px solid white;
-    border-radius: 1em;
     
+    border-radius: 1em;
+    background-color: #333;
 }
 
 .project-description a{
@@ -123,20 +123,20 @@ img{
 .card-img {
     width: 100%;
     border-radius: 1em 1em 0 0;
-    outline: 1px solid darkgrey;
+    
     overflow: hidden;
 }
 
 .contacts{
     height: 50vh;
-    background-color: rgb(var(--clr-accent));
+    background-color: var(--clr-accent);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .contacts h2{
-    color: rgb(var(--clr-light));
+    color: var(--clr-light);
     font-size: var(--fs-600);
 }
 
@@ -176,7 +176,7 @@ img{
     border-radius: 0;
     color: white;
     background-color: rgb(10, 102, 194);
-    outline: 1px solid white;
+    
     border-radius: var(--brdr-radius);
 }
 
