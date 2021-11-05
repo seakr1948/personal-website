@@ -138,11 +138,17 @@ img{
     font-size: var(--fs-600);
 }
 
+.social-links{
+    width: 80%;
+    justify-content: space-around;
+
+}
+
 .social-links a{
-    margin: 0 10%;
+    margin: 0 0.5em;
     padding: 10px;
     width: 20%;
-    aspect-ratio: 1;
+    
     flex-wrap: wrap;
     outline: 1px solid white;
     border-radius: 5px;
