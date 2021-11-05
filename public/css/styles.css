@@ -76,10 +76,12 @@ img{
 /* classes */
 
 .welcome-section {
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
     background: radial-gradient(#e66465, #9198e5);
+    background-position: center;
+    object-fit: contain;
 }
 
 .projects {
@@ -146,11 +148,13 @@ img{
 }
 
 .social-links a{
+
+    --border-radius: 5px;
     margin: 0 0.5em;
     
     flex-wrap: wrap;
     /* outline: 1px solid white; */
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .social-links .fa {
@@ -169,6 +173,7 @@ img{
     color: white;
     background-color: rgb(10, 102, 194);
     outline: 1px solid white;
+    border-radius: var(--border-radius);
 }
 
 .social-links .fa-envelope{
