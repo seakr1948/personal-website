@@ -4,41 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
     <title>My Personal Website | Fabian Nunez</title>
 </head>
 <body>
     <div class="home bg-dark">
-        <section class="welcome-section">
-            <h1>Welcome to my website</h1>
+        <section class="welcome-section flex">
+            <div><h1>Welcome to my website</h1></div>
         </section>
-        <section class="projects">
+        <section class="projects flex">
+            <h2>Some Projects that I have worked on</h2>
             <div class="project-card">
                 <div class="card-img">
-                    <img src="" alt="MySpotifyInsights">
-                </div><a href=""></a>
+                    <img src="/public/project-images/MySpotifyInsights.png" alt="MySpotifyInsights">
+                </div>
+                <div class="project-description">
+                    <a href="https://github.com/magacula/my-spotify-insights" target="_blank">MySpotifyInsights</a>
+                    <p>Senior project created with React that utilizes the spotify API to display the user data related to their music habits</p>
+                </div>
+                
             </div>
             <div class="project-card">
                 <div class="card-img">
-                    <img src="" alt="CS445-Inventory-Manager">
-                </div><a href=""></a>
+                    <img src="/public/project-images/CS-445-Inventory-Manager.PNG" alt="CS445-Inventory-Manager">
+                </div>
+                <div class="project-description">
+                    <a href="https://github.com/Chiaki-Shen/CS445-InventoryManager" target="_blank">CS445-Inventory-Manager</a>
+                    <p>Project that utilized agile development techniques to create a inventory manager that fulfilled a restaurants needs</p>
+                </div>
+                
             </div>
             <div class="project-card">
                 <div class="card-img">
                     <img src="" alt="Loruki-Website">
-                </div><a href=""></a>
+                </div>
+                <div class="project-description">
+                    <a href="">Loruki-Website</a>
+                    <p>Static Website that helped me better understand and practice layouts and techniques</p>
+                </div>
+                
             </div>
             <div class="project-card">
                 <div class="card-img">
                     <img src="" alt="Yelp_Cars">
-                </div><a href=""></a>
+                </div>
+                <div class="project-description">
+                    <a href="">Yelp_Cars</a>
+                    <p>Personal project that helped me understand more about technology stacks and how front end and back end are utilized together</p>
+                </div>
+                
             </div>
         </section>
-        <section class="contacts">
-            <a href=""><img src="" alt="Github"></a>
-            <a href=""><img src="" alt="Linkedin"></a>
-            <a href=""><img src="" alt="Email"></a>
-            <a href=""><img src="" alt="Phone"></a>
+        <section class="contacts flex">
+            <div>
+                <h2>My Socials...</h2>
+            </div>
+            <div class="social-links flex">
+                <a href="https://github.com/seakr1948" target="_blank" class="fa fa-github"></a>
+                <a href="linkedin.com/in/fabian-nunez-28210818a" target="_blank" class="fa fa-linkedin"></a>
+                <a href = "mailto: fabiannunez914@gmail.com" class="fa fa-envelope"></a>
+                <a href="tel:+17149024902" class="fa fa-phone"></a>
+            </div>
         </section>
     </div>
 </body>
