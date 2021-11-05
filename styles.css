@@ -31,7 +31,7 @@ p {
 
 body {
     line-height: 1.6;
-    font-family: Arial;
+    font-family: sans-serif;
 }
 
 /* --------------- */
@@ -52,4 +52,8 @@ body {
 
 .bg-red {
     background-color: rgb(var(--clr-red));
+}
+
+.home{
+    background-color: var(--clr-dark);
 }
