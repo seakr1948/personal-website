@@ -149,15 +149,15 @@ img{
     margin: 0 0.5em;
     
     flex-wrap: wrap;
-    outline: 1px solid white;
+    /* outline: 1px solid white; */
     border-radius: 5px;
 }
 
 .social-links .fa {
-    padding: 1.5em;
+    padding: 0.3em;
     text-align: center;
-    font-size: 1em;
-    padding: 1em;
+    font-size: 3em;
+    text-decoration: none;;
 } 
 
 .social-links .fa-github{
@@ -168,4 +168,15 @@ img{
 .social-links .fa-linkedin{
     color: white;
     background-color: rgb(10, 102, 194);
+    outline: 1px solid white;
+}
+
+.social-links .fa-envelope{
+    background-color: black;
+    color: white;
+}
+
+.social-links .fa-phone{
+    background-color: #eaeaea;
+    color: #e66465;
 }
