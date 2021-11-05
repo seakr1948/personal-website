@@ -1,0 +1,55 @@
+/* --------------- */
+/*     Custom Properties      */
+/* -------------- */
+:root {
+    --clr-dark: #333;
+    --clr-white: #FFF;
+    --clr-red: 255 23 23;
+
+}
+
+
+/* --------------- */
+/*     RESET      */
+/* -------------- */
+
+* ,
+*::before,
+*::after{
+box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial;
+}
+
+/* --------------- */
+/*     General      */
+/* -------------- */
+
+.flex{
+    display: flex;
+}
+
+.grid-container{
+    display: grid;
+}
+
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+
+.bg-red {
+    background-color: rgb(var(--clr-red));
+}
