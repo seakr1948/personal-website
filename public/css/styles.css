@@ -142,7 +142,7 @@ img{
     width: 80%;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .social-links a{
