@@ -4,7 +4,7 @@
 :root {
 
     /* colors */
-    --clr-dark: #222;
+    --clr-dark: #111;
     --clr-white: #FFF;
     --clr-accent: #07366b;
     --clr-light: #dbcea1;
@@ -76,17 +76,19 @@ img{
 /* classes */
 
 .welcome-section {
-    height: 70vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     background: radial-gradient(#e66465, #9198e5);
     background-position: center;
     object-fit: contain;
+    color: white;
 }
 
 .projects {
     flex-direction: column;
     color: var(--clr-white);
+    padding-bottom: 3em;
 }
 
 .projects h2{
@@ -148,7 +150,7 @@ img{
 }
 
 .social-links a{
-
+    box-shadow: 0 0 3px 3px hsl(0 0% 0% / 0.3);
     --brdr-radius: 5px;
     margin: 0 0.5em;
     border-radius: 0;
@@ -165,6 +167,9 @@ img{
     text-align: center;
     font-size: 2em;
     text-decoration: none;
+    transition: color 200ms ease-in,
+                background-color 200ms ease-in,
+                margin-bottom 200ms ease-in;
 } 
 
 .social-links .fa-github{
@@ -172,12 +177,29 @@ img{
     background-color: white;
 }
 
+
+.social-links .fa-github:hover{
+    color: white;
+    background-color: var(--clr-dark);
+}
+
+
 .social-links .fa-linkedin{
     border-radius: 0;
     color: white;
     background-color: rgb(10, 102, 194);
     
     border-radius: var(--brdr-radius);
+}
+
+#linkedin-container{
+    transition: transform 300ms linear;
+
+}
+
+#linkedin-container:hover .fa-linkedin{
+    transition: transform 150ms;
+    transform: translateY(-5px);
 }
 
 .social-links .fa-envelope{
@@ -188,4 +210,32 @@ img{
 .social-links .fa-phone{
     background-color: #eaeaea;
     color: #e66465;
+    
+}
+
+.social-links .fa-phone:hover{
+    animation: phone-ringing 1s ease-in-out;
+}
+
+@keyframes phone-ringing{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    20%{
+        transform: rotate(7deg);
+    }
+
+    40%{
+        transform: rotate(-7deg);
+    }
+    60%{
+        transform: rotate(7deg);
+    }
+    80%{
+        transform: rotate(-7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
