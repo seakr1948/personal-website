@@ -134,11 +134,61 @@ img{
 }
 
 /* tech section */
-.tech-skills{
+.skills{
     color: white;
-    background-color: black;
+    background-color: #111;
+    min-height: 300px;
+    width: 100%;
+    font-size: 1.3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    /* outline: 1px solid red; */
 }
 
+.skills h2{
+    text-align: center;
+}
+
+.skills span{
+    display: block;
+}
+
+.skills-container{
+    font-size: 2em; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container i {
+    margin: 0.3em;
+}
+
+.skills-container .fa-html5{
+    color: red;
+}
+
+.skills-container .fa-js{
+ color: yellow;
+}
+
+.skills-container .fa-node-js{
+    color: orange;
+}
+
+.skills-container .fa-react{
+    color: lightskyblue;
+}
+
+.skills-container .fa-css3{
+    color: rgb(31, 89, 247);
+}
+
+.skills-container .fa-python{
+    color:#2c59ac
+}
 /* contacts section */
 .contacts{
     height: 50vh;
