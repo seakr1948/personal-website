@@ -178,7 +178,8 @@ img{
 }
 
 
-.social-links .fa-github:hover{
+.social-links .fa-github:hover,
+.social-links .fa-github:focus{
     color: white;
     background-color: var(--clr-dark);
 }
@@ -192,14 +193,10 @@ img{
     border-radius: var(--brdr-radius);
 }
 
-#linkedin-container{
-    transition: transform 300ms linear;
-
-}
-
-#linkedin-container:hover .fa-linkedin{
-    transition: transform 150ms;
-    transform: translateY(-5px);
+.linkedin-container:hover .fa,
+.linkedin-container:focus .fa{
+    transform: translateY(-7px);
+    transition: transform 0.2s ease-in;
 }
 
 .social-links .fa-envelope{
@@ -213,7 +210,8 @@ img{
     
 }
 
-.social-links .fa-phone:hover{
+.social-links .fa-phone:hover,
+.social-links .fa-phone:focus{
     animation: phone-ringing 1s ease-in-out;
 }
 
