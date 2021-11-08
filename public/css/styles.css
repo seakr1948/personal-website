@@ -44,7 +44,7 @@ body {
     margin:0;
     padding: 0;
     line-height: 1.6;
-    font-family: Arial;
+    font-family: 'Roboto';
 }
 
 img{
@@ -81,10 +81,44 @@ img{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(#e66465, #9198e5);
+    background: radial-gradient(circle, #e66465 44%, #ff9c9c 58%,  #111 60%);
     background-position: center;
-    object-fit: contain;
+    
     color: white;
+    opacity: 1;
+    animation: opacity 1s ease-in-out;
+}
+
+.welcome-section h1{
+    font-size: var(--fs-500);
+    animation: text-slide-in 2s;
+    
+}
+
+@keyframes text-slide-in {
+    0%{
+        opacity: 0;
+        
+    }
+
+    66%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 /* projects section */
@@ -95,9 +129,13 @@ img{
     padding-bottom: 3em;
 }
 
+.project-container{
+    flex-direction: column;
+}
+
 .projects h2{
     text-align: center;
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 .project-card{
@@ -109,34 +147,54 @@ img{
     background-color: #333;
 }
 
+.project-description {
+    padding: 0.5em;
+}
+
+.project-link-text{
+    margin: 0.5em 0;
+}
+
 .project-description a{
     text-decoration: none;
     color: var(--clr-white);
-    margin: 0.5em ;
-    margin-block-start: 0.5em;
     border-bottom: 2px solid transparent;
 }
 
 .project-description a:hover{
-    border-bottom: 2px solid transparent
+    border-bottom: 2px solid lime
 }
 
 .project-description p {
-    padding: 0.5em;
 }
 
 
 .card-img {
     width: 100%;
     border-radius: 1em 1em 0 0;
-    
+    display: block;
     overflow: hidden;
 }
 
+@media (min-width: 35em) {
+    
+    .project-container{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .project-card{
+        width: 45%
+    }
+}
+
 /* tech section */
+
+
 .skills{
     color: white;
-    background-color: #111;
+    
     min-height: 300px;
     width: 100%;
     font-size: 1.3em;
@@ -189,6 +247,14 @@ img{
 .skills-container .fa-python{
     color:#2c59ac
 }
+
+@media (min-width: 35em) {
+    .skills-container{
+        font-size: 3em;
+    }
+}
+
+
 /* contacts section */
 .contacts{
     height: 50vh;
