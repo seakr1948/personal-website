@@ -193,7 +193,53 @@ img{
     border-bottom: 2px solid lime
 }
 
-.project-description p {
+.in-progress-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: var(--clr-dark);
+    
+}
+
+#caution-tape{
+    border: 1px solid yellow;
+    
+    width: 300%;
+    height: 30px;
+    background: linear-gradient(45deg,  black 0%, black 10%,
+                                        yellow 10%, yellow 20%,
+                                        black 20%, black 30%,
+                                        yellow 30%, yellow 40%,
+                                        black 40%, black 50%,
+                                        yellow 50%, yellow 60%,
+                                        black 60%, black 70%,
+                                        yellow 70%, yellow 80%,
+                                        black 80%, black 90%,
+                                        yellow 90%, yellow 100%
+    );
+    
+    animation: left-to-right 10s linear infinite;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+#tape-text{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    
+    text-shadow: -1px 1px white,
+                1px 1px white,
+                1px -1px white,
+                -1px -1px white;
 }
 
 
