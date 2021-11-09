@@ -152,6 +152,8 @@ img{
 /* projects section */
 
 .projects {
+    --scale-size: 0.8;
+
     flex-direction: column;
     color: var(--clr-white);
     padding-bottom: 3em;
@@ -170,9 +172,27 @@ img{
     width: 80%;
     margin: 1em auto;
     width: 80%; 
-    
+    opacity: 0.3;
     border-radius: 1em;
     background-color: #333;
+    transform: scale(var(--scale-size));
+}
+
+.project-card-animation{
+    animation: card-fade-in 1s ease-in-out 1 forwards;
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes card-fade-in {
+    from{
+        transform: scale(var(--scale-size));
+        opacity: 0.3;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .project-description {
